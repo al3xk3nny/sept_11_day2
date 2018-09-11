@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <style>
+        .box {
+            animation: movingbox 5s infinite;
+            background: red;
+            border-radius: 50%;
+            height: 200px;
+            left: 80%;
+            position: absolute;
+            top: 20%;
+            width: 200px;
+        }
+        
+        .box2 {
+            background: blue;
+            left: 40%;
+        }
+        
+        .image {
+            animation: movingimage 5s infinite;
+            position: absolute;
+        }
+        
+        @keyframes movingbox {
+            0% {
+                top: 80%;
+            }
+            50% {
+                top: 20%;
+            }
+            100% {
+                top: 80%;
+            }
+        }    
+            
+        @keyframes movingimage {
+            0% {
+                top: 80%;
+            }
+            50% {
+                top: 20%;
+            }
+            100% {
+                top: 80%;
+            }
+        }
+        
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="box"></div>
+    
+    <div class=" box box2"></div>
+    
+    <img class="image" src="images/owl.jpg" width="200">
+</body>
+
+</html>

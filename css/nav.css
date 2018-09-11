@@ -1,0 +1,57 @@
+nav ul li a {
+    display: block;
+    color: white;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+nav ul li {
+    border-bottom: 1px solid #444;
+    background-color: #1D2026;
+    font-size: 30px;
+    padding: 10px 5px;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+
+nav ul li:hover {
+    background-color: #555;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+body {
+    background-color: #292E37;
+}
+
+/* For mobile display, .picture class set to be 50% width. */
+.picture {
+    width: 100%;
+}
+/* Display none for picture2 class on mobile display. */
+.picture2 {
+    width: 100%;
+    display: none;
+}
+
+/* For viewport above an iPhone Plus. */
+@media (min-width: 414px) {
+    nav ul li {
+        display: inline-block;
+        font-size: 20px;
+        width: 100px;
+    }
+/* For viewport above an iPhone Plus, .picture class set to be 100% width. Display none for .picture class. */    
+    .picture {
+        width: 50%;
+        display: none;
+    }
+/* Important to include display: inline-block; to over-ride display: none; above for .picture2 class. */    
+    .picture2 {
+        width: 50%;
+        display: inline-block;
+    }
+}

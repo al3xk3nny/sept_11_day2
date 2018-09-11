@@ -1,0 +1,31 @@
+.box {
+    color: black;
+    border: 1px solid black;
+    height: 200px;
+    width: 50px;
+}
+
+/* If viewport is more than 320px wide and less then 768px change background color to blue. */
+@media (min-width: 320px) and (max-width: 768px) {
+    .box {
+        background-color: blue;
+    }
+/* If viewport is more than 320px wide display none for .mobile. */    
+    .mobile {
+        display: none;
+    }
+}
+/* If viewport is more then 768px wide change background color to red. */
+@media (min-width: 768px) {
+    .box {
+        background-color: red;
+    }
+/* If viewport is more than 768px wide display none for .mobile. */
+    .mobile {
+        display: none;
+    }
+/* If viewport is more then 768px wide display none for .tablet. */    
+    .tablet {
+        display: none;
+    }
+}
